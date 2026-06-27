@@ -25,7 +25,7 @@ y permitiendo inspeccionar registros y memoria en cualquier punto.
 
 ### Features
 
-| Requisito (del enunciado)                              
+| Requisito                             
 |------------------------------------------------------|
 | ISA base RV32I (Anexo A, 37 instrucciones)             
 | Memoria little-endian                                  
@@ -100,7 +100,7 @@ Los registros se aceptan por número (`x5`), índice (`5`) o nombre ABI
 
 ---
 
-## 4. Llamadas al sistema (`ecall`)
+## 4. Llamadas al sistema
 
 Convención estilo SPIM/CPUlator: **`a7`** lleva el número de servicio,
 **`a0`/`a1`** los argumentos.
@@ -164,10 +164,6 @@ riscv-sim/
 ├── CMakeLists.txt
 └── README.md
 ```
-
-> Nota: el enunciado pide un *simulador*, no un ensamblador. `tools/assemble.py`
-> es solo una utilidad para fabricar los programas de prueba sin depender de
-> CPUlator; el simulador en sí únicamente ejecuta código de máquina ya compilado.
 
 ---
 
